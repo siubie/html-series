@@ -22,17 +22,61 @@
     <form action="" method="post" enctype="multipart/form-data"></form>
 
     <!-- form input -->
-    <!-- input text -->
-    <!-- input password -->
+    <!-- tanpa method -->
+    <!-- http://localhost:8000/login.php?username=asdasdasd&password=asdas -->
+    <!-- dengan method post -->
+    <!-- http://localhost:8000/login.php -->
+    <form action="/login.php" method="POST">
+      <!-- input text -->
+      <label for="username">Username</label>
+      <input type="text" name="username" />
+      <!-- input password -->
+      <label for="password">Password</label>
+      <input type="password" name="password" id="password" />
+      <button type="submit">Login</button>
+    </form>
 
-    <!-- form checkbox -->
-    <!-- form checkbox multiple -->
+    <form action="/login.php" method="post">
+      Sebutkan Kendaraan yang anda miliki :
+      <div>
+        <!-- form checkbox -->
+        <input type="checkbox" name="kendaraan[]" id="motor" value="motor" />
+        <label for="morot">Sepeda Motor</label>
+        <input type="checkbox" name="kendaraan[]" id="sepeda" value="sepeda" />
+        <label for="morot">Sepeda Bmx</label>
+        <input type="checkbox" name="kendaraan[]" id="mobil" value="mobil" />
+        <label for="morot">Mobil Bmw</label>
+      </div>
+      <div>
+        <!-- form checkbox -->
+        <input type="checkbox" name="aset[]" id="rumah" value="rumah" />
+        <label for="morot">Rumah</label>
+        <input type="checkbox" name="aset[]" id="emas" value="emas" />
+        <label for="morot">Emas</label>
+      </div>
+      <button type="submit">Submit</button>
+    </form>
 
+    <form action="/login.php" method="post">
+      <!-- form radio button -->
+      Isilah Jenis Kelamin anda
+      <div>
+        <input type="radio" name="gender" id="male" value="male" />
+        <label for="male">Laki Laki</label>
+        <input type="radio" name="gender" id="female" value="female" />
+        <label for="female">Perempuan</label>
+      </div>
+      <div>
+        <input type="radio" name="age" id="old" value="old" />
+        <label for="old">Tua</label>
+        <input type="radio" name="age" id="young" value="young" />
+        <label for="young">Muda</label>
+      </div>
+      <!-- form multiple radio button -->
+    <button type="submit">Submit</button>
+    </form>
     <!-- forms select / dropdown -->
     <!-- form multiselect dropdown -->
-
-    <!-- form radio button -->
-    <!-- form multiple radio button -->
 
     <!-- forms input disabled -->
     <!-- forms input hidden -->
