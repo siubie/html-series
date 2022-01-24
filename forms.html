@@ -73,10 +73,26 @@
         <label for="young">Muda</label>
       </div>
       <!-- form multiple radio button -->
-    <button type="submit">Submit</button>
+      <button type="submit">Submit</button>
     </form>
-    <!-- forms select / dropdown -->
-    <!-- form multiselect dropdown -->
+
+    <form action="/login.php" method="post">
+      <!-- forms select / dropdown -->
+      <label for="mobil">Choose a car:</label>
+      <select name="mobil" id="mobil">
+        <option value="expander">Expander</option>
+        <option value="nissan">Nissan</option>
+        <option value="yaris">Yaris</option>
+      </select>
+      <!-- form multiselect dropdown -->
+      <label for="mobilMulti">Choose a car:</label>
+      <select name="mobilMulti[]" id="mobilMulti" multiple>
+        <option value="expander">Expander</option>
+        <option value="nissan">Nissan</option>
+        <option value="yaris">Yaris</option>
+      </select>
+      <button type="submit">Submit</button>
+    </form>
 
     <!-- forms input disabled -->
     <!-- forms input hidden -->
