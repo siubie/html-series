@@ -94,7 +94,18 @@
       <button type="submit">Submit</button>
     </form>
 
-    <!-- forms input disabled -->
-    <!-- forms input hidden -->
+    <hr />
+    <form action="/login.php" method="post">
+      <!-- forms input disabled -->
+      <label for="userid">User Id</label>
+      <input type="text" name="userid" id="userid" disabled="true" value="101" />
+      <br />
+      <br />
+      <!-- forms input hidden -->
+      <label for="nama">Nama</label>
+      <input type="text" name="nama" id="nama" hidden value="hidden" />
+      <br /><br />
+      <button type="submit">Submit</button>
+    </form>
   </body>
 </html>
