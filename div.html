@@ -5,11 +5,56 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <style>
+      #red {
+        background-color: red;
+        font-size: 72px;
+        height: 100px;
+      }
+      .green {
+        background-color: green;
+        font-size: 72px;
+        height: 100px;
+      }
+    </style>
   </head>
   <body>
     <!-- container untuk mengelompokkan -->
+    <div>
+      <h1>Judul Berita</h1>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam, quam!
+      </p>
+      <ul>
+        <li>tes</li>
+        <li>tes</li>
+        <li>tes</li>
+      </ul>
+      <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Optio
+        distinctio excepturi impedit itaque exercitationem ad maxime, iusto nemo
+        fugit ex!
+      </p>
+    </div>
     <!-- sifatnya block -->
+    <!-- setiap diberi div dia bakal nge break -->
+    <hr />
+    <label for="username">Username</label>
+    <input type="text" name="username" id="username" />
+    <label for="password">Password</label>
+    <input type="password" name="password" id="password" />
+    <hr />
+    <div>
+      <label for="username">Username</label>
+      <input type="text" name="username" id="username" />
+    </div>
+    <div>
+      <label for="password">Password</label>
+      <input type="password" name="password" id="password" />
+    </div>
     <!-- bisa di kasi style lewat id atau class -->
+    <div id="red">Red</div>
+    <div class="green">Green</div>
     <!-- kalo mau inline di custom style -->
   </body>
 </html>
